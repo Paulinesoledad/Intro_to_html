@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    nav {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  nav a:hover {
+    color: #007bff;
+  }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .confirmation {
+      text-align: center;
+      color: green;
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+  <a href="index.html">← Back to Home</a>
+</nav>
+    <h1>Book a Project</h1>
+
+  <form id="projectForm" onsubmit="handleSubmit(event)">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="projectType">Project Type:</label>
+    <select id="projectType" name="projectType" required>
+      <option value="">-- Select a project type --</option>
+      <option value="portfolio">Portfolio Website</option>
+      <option value="landing">Landing Page</option>
+      <option value="bugfix">Bug Fixing</option>
+      <option value="responsive">Responsive Redesign</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="budget">Estimated Budget (₦):</label>
+    <input type="number" id="budget" name="budget" required>
+
+    <label for="timeline">Preferred Timeline (in weeks):</label>
+    <input type="number" id="timeline" name="timeline" required>
+
+    <label for="message">Project Description:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <label for="reference">Do you have a reference website?</label>
+    <input type="url" id="reference" name="reference" placeholder="https://example.com">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="confirmation" id="confirmationMessage">
+    ✅ Thank you! Your project request has been submitted successfully.
+  </div>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevent page reload
+      document.getElementById('projectForm').reset(); // Clear the form
+      document.getElementById('confirmationMessage').style.display = 'block'; // Show message
+    }
+  </script>
+
+</body>
+</html>

@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css">
-    <title>My Personal Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Portfolio</h1>
-      <p>Frontend Development Intern | Aspiring Web Developer</p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome To My Portfolio</h1>
+  </header>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="book.html">Book a Service</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="book.html">Book a Service</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hi! I'm Ominyi Pauline, a Frontend Development Intern at Flexisaf. I love building clean, functional web pages using HTML, CSS, and JavaScript.
-        </p>
-        <img src="images/pauline.jpg" alt="My photo" />
-      </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Pauline, a frontend development intern passionate about crafting beautiful and functional web interfaces. 
+     <br> I have a keen eye for design and usability and love bringing ideas to life through clean and responsive code.
+      <br>I'm constantly learning and enjoy collaborating on creative projects that challenge my skills and expand my knowledge.</p>
+    <img src="images/pauline.jpg" alt="Pauline's photo" class="about-image" />
+  </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>Basic HTML Resume Page</li>
-          <li>Landing Page Layout</li>
-        </ul>
-      </section>
+  <section id="services">
+    <h2>My Services</h2>
+    <div class="grid-container">
+      <div class="service-card">
+        <h3>Web Design</h3>
+        <p>Creating visually appealing and user-friendly website layouts.</p>
+      </div>
+      <div class="service-card">
+        <h3>Responsive Development</h3>
+        <p>Building websites that look great on all devices.</p>
+      </div>
+      <div class="service-card">
+        <h3>Landing Pages</h3>
+        <p>Designing high-converting landing pages for businesses and campaigns.</p>
+      </div>
+    </div>
+  </section>
 
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: paulinesoledad1@gmail.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/Pauline Ominyi" target="_blank">My LinkedIn</a></p>
-        <p>GitHub: <a href="https://github.com/paulinesoledad" target="_blank">My GitHub</a></p>
-      </section>
-    </main>
+  <section id="portfolio">
+    <h2>Portfolio Gallery</h2>
+    <div class="grid-container">
+      <div class="service-card">
+        <h3>Project One</h3>
+        <p>A modern responsive website layout for a startup company.</p>
+      </div>
+      <div class="service-card">
+        <h3>Project Two</h3>
+        <p>An elegant landing page for a fashion brand campaign.</p>
+      </div>
+      <div class="service-card">
+        <h3>Project Three</h3>
+        <p>A minimalist blog layout with dynamic content sections.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <p>&copy; 2025 Ominyi Pauline. All rights reserved.</p>
-    </footer>
-  </body>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <ul class="contact-list">
+      <li>Email: <a href="mailto:paulinesoledad1@gmail.com">paulinesoledad1@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/paulinesoledad" target="_blank">My GitHub</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/Pauline Ominyi" target="_blank">My LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pauline. All rights reserved.</p>
+  </footer>
+</body>
 </html>

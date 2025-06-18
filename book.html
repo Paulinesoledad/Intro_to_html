@@ -121,23 +121,15 @@
       <label for="message">Additional Notes:</label>
       <textarea id="message" name="message" rows="4" placeholder="Tell me more about what you need..."></textarea>
 
-      <button type="submit">Submit Booking</button>
+      <button type="submit" id="submitBtn">Book Now</button>
     </form>
 
-    <div class="confirmation" id="confirmationMessage">
+    <div class="confirmation" id="confirmationMessage" style="display: none;">
       Thank you! Your booking request has been submitted.
     </div>
   </div>
 
-  <script>
-    const form = document.getElementById('bookingForm');
-    const confirmation = document.getElementById('confirmationMessage');
+  <script src="script.js"></script>
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      confirmation.style.display = 'block';
-      form.reset();
-    });
-  </script>
 </body>
 </html>
